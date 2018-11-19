@@ -1,0 +1,28 @@
+Sudoku Generator/Solver
+To be written in Java(?)
+	Generator: Randomly generate some numbers, solve, then remove as many numbers as possible while still solvable in the same way
+		Backtracking to check different ways of removing numbers
+		Requires solving to be done first
+	Solver:
+		Needs lots of logic
+		Check for rows, columns, and squares
+		"ghost numbers" (?)
+			numbers whose location is uncertain, but must be in a row or column
+		other strategies?
+			noting every possible location of every number
+				filling when only one possibility
+	Board:
+		Square: contains 3x3 int array
+			use static to keep track of which position it's in (?)
+			methods:
+				check if a number is in a row/column of the square
+				check if a number is in the square
+				check if a number is board generated or user inputed
+				input a number into a space (user and origin segregated)
+				get all numbers in a row/column/square
+		Board: 3x3 array of squares
+			methods:
+				check if a number is in a row/column/square by calling square methods
+				put a number into a space by calling square methods
+				check if valid solution
+					get all numbers in a row/column/square
