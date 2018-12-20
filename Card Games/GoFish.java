@@ -10,7 +10,7 @@ public class GoFish {
 	private GFplayer[] players;
 	private DeckOfCards deck;
 	private int pnum;
-	private boolean tof;
+	private boolean tof; //two or 4 cards to match
 	private int turn;
 	private boolean[] cpu;
 
